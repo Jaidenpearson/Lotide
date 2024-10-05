@@ -23,7 +23,6 @@ let countOnly = (arr, objectToCount) => {
     }
   }
 }
-  console.log(guestCount)
   return guestCount
 }
 
