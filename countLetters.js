@@ -2,13 +2,11 @@ const countLetters = (string) => {
   let counter = {}
   for(letter of string) {
     if(letter === " ") {
-      console.log("Caught the space")
       continue
     } else { 
     counter[letter] = (counter[letter] ?? 0) + 1
     }
   }
-    console.log(`Final answer: ${counter}`)
     return counter
   }
 
