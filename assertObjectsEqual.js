@@ -1,4 +1,4 @@
-const eqObjects = (object1, object2) => {
+const assertEqObjects = (object1, object2) => {
   const inspect = require("util").inspect;
   if(Object.keys(object1).length !== Object.keys(object2).length) {
     console.log(`🛑🛑🛑 Objects are different lengths. Object 1 length: ${Object.keys(object1).length} Object 2 length: ${Object.keys(object2).length}`)
