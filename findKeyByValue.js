@@ -1,6 +1,6 @@
 let findKeyByValue = (obj, value) => {
   for(key in obj) {
-    if(obj[key] === value) {
+    if(let obj[key] === value) {
       return key
     }
   }
