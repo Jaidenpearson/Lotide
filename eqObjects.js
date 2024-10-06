@@ -52,5 +52,5 @@ const longSleeveMultiColorShirtObject = {
 };
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // => false
 
-// assertEqual(eqObjects(student1, student3), false) 
-// assertEqual(eqObjects(student2, twinOfStudent2WhoseParentsDontLoveThem), true)
+assertEqual(eqObjects(student1, student3), false) 
+assertEqual(eqObjects(student2, twinOfStudent2WhoseParentsDontLoveThem), true)
