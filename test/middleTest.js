@@ -8,6 +8,9 @@ describe("#middle", () => {
   it("Returns two digits when given an array divisible by 2", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
   })
+  it("Returns a single value on odd indexed arrays", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3])
+  })
 })
 
 // assertArraysEqual(middle([1]), []); // => []

@@ -19,11 +19,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-let test = countLetters("apples")
+// // TEST CODE
+// let test = countLetters("apples")
 
-assertEqual(test["a"], 1)
-assertEqual(test["p"], 2)
-assertEqual(test["l"], 1)
-assertEqual(test["e"], 1)
-assertEqual(test["s"], 1)
+// assertEqual(test["a"], 1)
+// assertEqual(test["p"], 2)
+// assertEqual(test["l"], 1)
+// assertEqual(test["e"], 1)
+// assertEqual(test["s"], 1)
+
+module.exports = countLetters

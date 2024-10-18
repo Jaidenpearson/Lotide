@@ -10,9 +10,11 @@ const flatten = function(arr) {
   return flattened;
 };
 
-let nestedArray = flatten([1, 2, [[[3], 4], 5, [6]]]); // => [1, 2, 3, 4, 5, 6]
+// let nestedArray = flatten([1, 2, [[[3], 4], 5, [6]]]); // => [1, 2, 3, 4, 5, 6]
 
-console.log(nestedArray);
+// console.log(nestedArray);
 
 
-let func = function(...arr){}
+// let func = function(...arr){}
+
+module.exports = flatten

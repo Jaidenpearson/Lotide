@@ -28,22 +28,24 @@ const eqArrays = function(arr1, arr2) {
   return true
 }
 
-// TEST CODE
+// // TEST CODE
 
-const student1 = {name: "Jesse", age: 25, gender: "non-binary"}
-const student2 = {name: "Markus", age: 77, gender: "male"}
-const student3 = {name: "Fiona", age: 37, gender: "Female"}
-const twinOfStudent2WhoseParentsDontLoveThem = {name: "Markus", age: 77, gender: "male"}
+// const student1 = {name: "Jesse", age: 25, gender: "non-binary"}
+// const student2 = {name: "Markus", age: 77, gender: "male"}
+// const student3 = {name: "Fiona", age: 37, gender: "Female"}
+// const twinOfStudent2WhoseParentsDontLoveThem = {name: "Markus", age: 77, gender: "male"}
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject); // => true
+// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
+// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
+// assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject); // => true
 
-const longSleeveMultiColorShirtObject = {
-  size: "medium",
-  colors: ["red", "blue"],
-  sleeveLength: "long",
-};
-assertObjectsEqual(multiColorShirtObject, longSleeveMultiColorShirtObject); 
-assertObjectsEqual(student1, student3)
-assertObjectsEqual(student2, twinOfStudent2WhoseParentsDontLoveThem)
+// const longSleeveMultiColorShirtObject = {
+//   size: "medium",
+//   colors: ["red", "blue"],
+//   sleeveLength: "long",
+// };
+// assertObjectsEqual(multiColorShirtObject, longSleeveMultiColorShirtObject); 
+// assertObjectsEqual(student1, student3)
+// assertObjectsEqual(student2, twinOfStudent2WhoseParentsDontLoveThem)
+
+module.exports = assertObjectsEqual
