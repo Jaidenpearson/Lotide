@@ -1,4 +1,4 @@
-let middle = function(arr) {
+let middle = (arr) => {
   let result = [];
   if (arr.length <= 2) {
     return result;
@@ -8,7 +8,6 @@ let middle = function(arr) {
   } else if (arr.length % 2 !== 0) {
     result.push(arr[(arr.length - 1) / 2]);
   }
-  console.log(result);
   return result
 };
 
