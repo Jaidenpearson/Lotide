@@ -1,15 +1,15 @@
 const assertObjectsEqual = (object1, object2) => {
   const inspect = require("util").inspect;
   if(Object.keys(object1).length !== Object.keys(object2).length) {
-    console.log(`🛑🛑🛑 Objects are different lengths. Object 1 length: ${Object.keys(object1).length} Object 2 length: ${Object.keys(object2).length}`)
+    console.log(`🛑🛑🛑 Objects are different lengths. Object 1 length: ${Object.keys(object1).length} Object 2 length: ${Object.keys(object2).length}`) // Determines whether the objects are the sane legnth for equality
   } 
   for(key in object1) {
     if(Array.isArray(object1[key]) && Array.isArray(object2[key])) {
       if(!eqArrays(object1[key], object2[key])) {
-      console.log("🛑🛑🛑 Arrays in objects are not equal.")
+      console.log("🛑🛑🛑 Arrays in objects are not equal.") // Checks if keys are equal
       }
     } else if(object1[key] !== object2[key]) {
-      console.log(`🛑🛑🛑 Key:Value pairs are not equal. ${inspect(object1[key])} !== ${inspect(object2[key])}`)
+      console.log(`🛑🛑🛑 Key:Value pairs are not equal. ${inspect(object1[key])} !== ${inspect(object2[key])}`) // Checks if key: Value pairs are equal
     } else {
       console.log("✔✔✔ Objects are equal")
       }

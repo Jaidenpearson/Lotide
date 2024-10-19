@@ -13,12 +13,12 @@ const firstNames = [
 let countOnly = (arr, objectToCount) => {
   let guestCount = {}
   for(key in objectToCount) {
-    if(objectToCount[key] !== true) {
+    if(objectToCount[key] !== true) { // Checks if name to be counted is labelled as true. If false, function stops
       continue
     } else {
       for(value of arr) {
         if(value === key) {
-          guestCount[key] = (guestCount[key] ?? 0) + 1
+          guestCount[key] = (guestCount[key] ?? 0) + 1 // Adds guest name count to guestCount object to be returned at end of function
       }
     }
   }
