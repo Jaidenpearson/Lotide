@@ -24,11 +24,9 @@ const assertArraysEqual = function(arr1, arr2) {
 
 // TEST CODE
 
-// assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => [2, 3]
-// assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1", "2"]
-// let anArray = [5, 3, 7, 1, 3]
-// assertArraysEqual(without(anArray, [6, 2, 9, 3]), [5, 7, 1])
-
-module.exports = without
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => [2, 3]
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1", "2"]
+let anArray = [5, 3, 7, 1, 3]
+assertArraysEqual(without(anArray, [6, 2, 9, 3]), [5, 7, 1])
 
 

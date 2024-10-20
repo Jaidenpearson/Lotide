@@ -1,4 +1,4 @@
-const flatten = (arr) => {
+const flatten = function(arr) {
   let flattened = [];
   for (let item of arr) {
     if (Array.isArray(item)) {
@@ -10,4 +10,9 @@ const flatten = (arr) => {
   return flattened;
 };
 
-module.exports = flatten
+let nestedArray = flatten([1, 2, [[[3], 4], 5, [6]]]); // => [1, 2, 3, 4, 5, 6]
+
+console.log(nestedArray);
+
+
+let func = function(...arr){}

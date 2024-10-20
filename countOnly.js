@@ -13,17 +13,17 @@ const firstNames = [
 let countOnly = (arr, objectToCount) => {
   let guestCount = {}
   for(key in objectToCount) {
-    if(objectToCount[key] !== true) { // Checks if name to be counted is labelled as true. If false, function stops
+    if(objectToCount[key] !== true) {
       continue
     } else {
       for(value of arr) {
         if(value === key) {
-          guestCount[key] = (guestCount[key] ?? 0) + 1 // Adds guest name count to guestCount object to be returned at end of function
+          guestCount[key] = (guestCount[key] ?? 0) + 1
       }
     }
   }
 }
-  return 
+  return guestCount
 }
 
 const result1 = countOnly(firstNames, {
@@ -33,13 +33,17 @@ const result1 = countOnly(firstNames, {
   Agouhanna: false,
 });
 
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✔✔✔ Assertion Passed: ${actual} === ${expected} `);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
 
+// COUNTONLY TEST CODE
 
-// // COUNTONLY TEST CODE
-
-// assertEqual(result1["Jason"], 1);
-// assertEqual(result1["Karima"], undefined);
-// assertEqual(result1["Fang"], 2);
-// assertEqual(result1["Agouhanna"], undefined);
-
-module.exports = countOnly
+assertEqual(result1["Jason"], 1);
+assertEqual(result1["Karima"], undefined);
+assertEqual(result1["Fang"], 2);
+assertEqual(result1["Agouhanna"], undefined);
