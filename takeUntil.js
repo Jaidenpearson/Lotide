@@ -1,7 +1,7 @@
-const takeUntil = function(array, callback) {
+const takeUntil = (array, callback) => {
   let result = []
   for(item of array) {
-    if(callback(item)){
+    if(callback(item)){ //Stops pushing from original array when callback returns true
       break
     } else {
       result.push(item)
@@ -19,3 +19,5 @@ console.log('---');
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"]; //[ 'I\'ve', 'been', 'to', 'Hollywood' ]
 const results2 = takeUntil(data2, x => x === ',');
 console.log(results2);
+
+module.exports = {takeUntil}

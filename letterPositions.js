@@ -1,8 +1,10 @@
-const letterPositions = function (string) {
+const assertArraysEqual = require("./assertArraysEqual")
+
+const letterPositions = (string) => {
   let sentence = string.toLowerCase()
   const results = {};
   for(i = 0; i < sentence.length; i++) {
-    if(sentence[i] === " ") {
+    if(sentence[i] === " ") {   // Checks for spaces, skips index if it is a space
       continue
     } else if(results[sentence[i]]) {
       results[sentence[i]].push(i)
@@ -15,29 +17,6 @@ const letterPositions = function (string) {
   return results;
 };
 
-
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✔✔✔ Assertion Passed: ${actual} === ${expected} `);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  if(arr1.length !== arr2.length) {
-    console.log("🛑🛑🛑Arrays are different lengths")
-    return
-  }
-  for(let i = 0; i < arr1.length; i++) {
-    if(arr1[i] !== arr2[i]) {
-      console.log(`🛑🛑🛑Index: ${[i]} is not equal between arrays`)
-      return
-    }
-  }
-  console.log("✔✔✔Arrays are identical")
-}
 
 // TEST CODE
 
@@ -52,3 +31,5 @@ assertArraysEqual(hello.o, [4])
 
 assertArraysEqual(anotherTest.t, [0, 9, 12])
 assertArraysEqual(anotherTest.a, [5, 11])
+
+module.exports = {letterPositions}

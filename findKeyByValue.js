@@ -1,18 +1,12 @@
+const assertEqual = require("./assertEqual")
+
 let findKeyByValue = (obj, value) => {
-  for(key in obj) {
-    if(let obj[key] === value) {
+  for(let key in obj) {
+    if(obj[key] === value) {
       return key
     }
   }
 }
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✔✔✔ Assertion Passed: ${actual} === ${expected} `);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
 // TEST CODE
 
@@ -24,3 +18,5 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+module.exports = {findKeyByValue}
