@@ -1,6 +1,6 @@
 {
   "name": "lotide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simplified mock of the Lodash JS library",
   "main": "index.js",
   "directories": {
