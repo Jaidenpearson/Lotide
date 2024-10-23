@@ -22,4 +22,4 @@ assertEqual(test["l"], 1)
 assertEqual(test["e"], 1)
 assertEqual(test["s"], 1)
 
-module.exports = {countLetters}
+module.exports = countLetters

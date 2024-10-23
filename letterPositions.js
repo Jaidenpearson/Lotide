@@ -32,4 +32,4 @@ assertArraysEqual(hello.o, [4])
 assertArraysEqual(anotherTest.t, [0, 9, 12])
 assertArraysEqual(anotherTest.a, [5, 11])
 
-module.exports = {letterPositions}
+module.exports = letterPositions

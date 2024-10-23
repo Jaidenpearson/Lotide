@@ -9,4 +9,4 @@ assertEqual(result.length, 2);
 assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Lab");
 
-module.exports = {tail}
+module.exports = tail

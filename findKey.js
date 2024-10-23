@@ -22,4 +22,4 @@ assertEqual(findKey(
   (x) => x.stars === 2
 ), 'noma');
 
-module.exports = {findKey}
+module.exports = findKey

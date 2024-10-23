@@ -16,4 +16,4 @@ console.log(results1);
 
 assertArraysEqual(results1, ['g', 'c', 't', 'm', 't'])
 
-module.exports = {map}
+module.exports = map

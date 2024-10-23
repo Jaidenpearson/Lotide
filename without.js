@@ -17,5 +17,5 @@ assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1"
 let anArray = [5, 3, 7, 1, 3]
 assertArraysEqual(without(anArray, [6, 2, 9, 3]), [5, 7, 1])
 
-module.exports = {without}
+module.exports = without
 

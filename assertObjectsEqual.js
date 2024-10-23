@@ -38,4 +38,4 @@ assertObjectsEqual(multiColorShirtObject, longSleeveMultiColorShirtObject);
 assertObjectsEqual(student1, student3)
 assertObjectsEqual(student2, twinOfStudent2WhoseParentsDontLoveThem)
 
-module.exports = {assertObjectsEqual}
+module.exports = assertObjectsEqual

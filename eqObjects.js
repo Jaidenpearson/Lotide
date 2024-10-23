@@ -38,4 +38,4 @@ assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), f
 assertEqual(eqObjects(student1, student3), false) 
 assertEqual(eqObjects(student2, twinOfStudent2WhoseParentsDontLoveThem), true)
 
-module.exports = {eqObjects}
+module.exports = eqObjects
